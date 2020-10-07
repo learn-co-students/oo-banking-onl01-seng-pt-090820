@@ -1,4 +1,4 @@
-
+require "pry"
 
 class Transfer
   
@@ -12,6 +12,7 @@ class Transfer
   end
   
   def valid?
+    #binding.pry
     self.sender.valid? && self.receiver.valid? && sender.balance > amount
   end
   
